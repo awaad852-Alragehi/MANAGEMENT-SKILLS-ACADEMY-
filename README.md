@@ -24,6 +24,16 @@
         }
 
         body { background-color: var(--bg-light); color: #333; }
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* نسبة أبعاد الفيديو 16:9 */
+    height: 0;
+}
+.video-container iframe {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+}
 
         /* الهيدر واللوجو */
         header {
@@ -76,11 +86,39 @@
 
         /* تحسين البطاقات */
         .services {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            padding: 60px 5%;
-            margin-top: -50px;
+           <section class="services" id="courses">
+    <!-- دورة PMP المطورة -->
+    <div class="service-card">
+        <!-- الفيديو التعريفي -->
+        <div class="video-container" style="margin-bottom: 20px; border-radius: 15px; overflow: hidden; background: #000;">
+            <!-- استبدل الرابط أدناه برابط فيديو من يوتيوب -->
+            <iframe width="100%" height="200" src="https://www.youtube.com" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <i class="fas fa-project-diagram" style="color: var(--accent);"></i>
+        <h3>إدارة المشاريع الاحترافية (PMP)</h3>
+        
+        <div class="course-details" style="text-align: right; margin: 15px 0;">
+            <p style="font-size: 0.9rem; color: #666; margin-bottom: 10px;">
+                <i class="fas fa-check-circle" style="color: green;"></i> 35 ساعة تدريبية معتمدة
+            </p>
+            <p style="font-size: 0.9rem; color: #666; margin-bottom: 10px;">
+                <i class="fas fa-check-circle" style="color: green;"></i> محاكاة كاملة للاختبار الدولي
+            </p>
+            <p style="font-size: 0.9rem; color: #666; margin-bottom: 10px;">
+                <i class="fas fa-check-circle" style="color: green;"></i> شرح منهجية Agile و Waterfall
+            </p>
+        </div>
+
+        <div class="booking-box" style="background: #fdf2e9; padding: 15px; border-radius: 10px; margin-top: 15px;">
+            <p style="font-weight: bold; color: var(--primary);">سعر الدورة: 1500 ريال</p>
+            <a href="https://wa.me" class="btn-call" style="width: 100%; font-size: 0.9rem; padding: 10px;">احجز مقعدك الآن</a>
+        </div>
+    </div>
+
+    <!-- كرر نفس التنسيق للدورات الأخرى -->
+</section>
+
         }
 
         .service-card {
