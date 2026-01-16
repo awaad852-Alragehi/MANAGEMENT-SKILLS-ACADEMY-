@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>أكاديمية التدريب والتطوير | TRAINING ACADEMY</title>
+    <title>أكاديمية المهارات الإدارية | 2026</title>
     
     <!-- مكتبة الأيقونات والخطوط -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com">
@@ -11,9 +11,9 @@
     
     <style>
         :root {
-            --primary: #1a2a6c; /* أزرق ملكي غامق */
-            --secondary: #b21f1f; /* أحمر داكن جذاب */
-            --accent: #fdbb2d; /* ذهبي للأزرار واللوجو */
+            --primary: #1a2a6c;
+            --secondary: #b21f1f;
+            --accent: #fdbb2d;
             --white: #ffffff;
             --bg-light: #f8f9fa;
         }
@@ -23,19 +23,9 @@
             font-family: 'Almarai', sans-serif;
         }
 
-        body { background-color: var(--bg-light); color: #333; }
-.video-container {
-    position: relative;
-    padding-bottom: 56.25%; /* نسبة أبعاد الفيديو 16:9 */
-    height: 0;
-}
-.video-container iframe {
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-}
+        body { background-color: var(--bg-light); color: #333; line-height: 1.6; }
 
-        /* الهيدر واللوجو */
+        /* الهيدر */
         header {
             background: var(--primary);
             padding: 15px 5%;
@@ -48,7 +38,7 @@
 
         .logo {
             color: var(--accent);
-            font-size: 1.8rem;
+            font-size: 1.4rem;
             font-weight: 800;
             text-decoration: none;
             display: flex;
@@ -72,7 +62,7 @@
             background-size: 400% 400%;
             animation: gradientBG 15s ease infinite;
             color: white;
-            padding: 120px 5% 80px;
+            padding: 100px 5%;
             text-align: center;
         }
 
@@ -82,91 +72,78 @@
             100% { background-position: 0% 50%; }
         }
 
-        .hero h1 { font-size: 3.5rem; margin-bottom: 20px; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); }
+        .hero h1 { font-size: 3rem; margin-bottom: 20px; }
 
-        /* تحسين البطاقات */
+        /* قسم الدورات */
         .services {
-           <section class="services" id="courses">
-    <!-- دورة PMP المطورة -->
-    <div class="service-card">
-       .services {
-           <section class="services" id="courses">
-    <!-- دورة PMP المطورة -->
-    <div class="service-card">
-        <!-- الفيديو التعريفي -->
-        <div class="video-container" style="margin-bottom: 20px; border-radius: 15px; overflow: hidden; background: #000;">
-            <!-- استبدل الرابط أدناه برابط فيديو من يوتيوب -->
-            <iframe width="100%" height="200" src="https://www.youtube.com" frameborder="0" allowfullscreen></iframe>
-        </div>
-
-        <i class="fas fa-project-diagram" style="color: var(--accent);"></i>
-        <h3>إدارة المشاريع الاحترافية (PMP)</h3>
-        
-        <div class="course-details" style="text-align: right; margin: 15px 0;"
-        <!-- الفيديو التعريفي -->
-        <div class="video-container" style="margin-bottom: 20px; border-radius: 15px; overflow: hidden; background: #000;">
-            <!-- استبدل الرابط أدناه برابط فيديو من يوتيوب -->
-            <iframe width="100%" height="200" src="https://www.youtube.com" frameborder="0" allowfullscreen></iframe>
-        </div>
-
-        <i class="fas fa-project-diagram" style="color: var(--accent);"></i>
-        <h3>إدارة المشاريع الاحترافية (PMP)</h3>
-        
-        <div class="course-details" style="text-align: right; margin: 15px 0;">
-            <p style="font-size: 0.9rem; color: #666; margin-bottom: 10px;">
-                <i class="fas fa-check-circle" style="color: green;"></i> 35 ساعة تدريبية معتمدة
-            </p>
-            <p style="font-size: 0.9rem; color: #666; margin-bottom: 10px;">
-                <i class="fas fa-check-circle" style="color: green;"></i> محاكاة كاملة للاختبار الدولي
-            </p>
-            <p style="font-size: 0.9rem; color: #666; margin-bottom: 10px;">
-                <i class="fas fa-check-circle" style="color: green;"></i> شرح منهجية Agile و Waterfall
-            </p>
-        </div>
-
-        <div class="booking-box" style="background: #fdf2e9; padding: 15px; border-radius: 10px; margin-top: 15px;">
-            <p style="font-weight: bold; color: var(--primary);">سعر الدورة: 1500 ريال</p>
-            <a href="https://wa.me" class="btn-call" style="width: 100%; font-size: 0.9rem; padding: 10px;">احجز مقعدك الآن</a>
-        </div>
-    </div>
-
-    <!-- كرر نفس التنسيق للدورات الأخرى -->
-</section>
-
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 50px 5%;
         }
 
         .service-card {
             background: var(--white);
-            padding: 40px 30px;
-            border-radius: 20px; /* حواف دائرية */
+            padding: 25px;
+            border-radius: 20px;
             text-align: center;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.1); /* ظل ناعم */
-            transition: all 0.4s ease;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            transition: 0.4s;
             border-bottom: 5px solid var(--accent);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
 
-        .service-card:hover {
-            transform: translateY(-15px);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+        .service-card:hover { transform: translateY(-10px); }
+
+        .video-container {
+            border-radius: 15px;
+            overflow: hidden;
+            margin-bottom: 15px;
+            background: #000;
+            aspect-ratio: 16/9;
         }
 
-        .service-card i {
-            font-size: 3rem;
-            color: var(--primary);
-            margin-bottom: 20px;
+        .service-card i { font-size: 2.5rem; color: var(--primary); margin-bottom: 15px; }
+        
+        .course-features {
+            text-align: right;
+            margin: 15px 0;
+            font-size: 0.9rem;
         }
 
-        .btn-call {
+        .course-features li {
+            list-style: none;
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        .course-features li i {
+            font-size: 1rem;
+            color: #27ae60;
+            margin-left: 8px;
+        }
+
+        .price-tag {
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: var(--secondary);
+            margin: 15px 0;
+        }
+
+        .btn-booking {
             background: var(--accent);
             color: var(--primary);
-            padding: 15px 35px;
+            padding: 12px;
             border-radius: 50px;
             text-decoration: none;
             font-weight: 800;
-            display: inline-block;
-            margin-top: 20px;
-            box-shadow: 0 4px 15px rgba(253, 187, 45, 0.4);
+            transition: 0.3s;
+            display: block;
         }
+
+        .btn-booking:hover { background: var(--primary); color: white; }
 
         .contact-section {
             background: var(--primary);
@@ -182,9 +159,8 @@
 
     <header>
         <a href="#" class="logo">
-            <i class="fas fa-graduation-cap"></i> <!-- أيقونة اللوجو -->
-            أكاديمية المهارات الادارية
-            management skills academy
+            <i class="fas fa-graduation-cap"></i>
+            أكاديمية المهارات الإدارية
         </a>
         <nav>
             <a href="#home">الرئيسية</a>
@@ -194,32 +170,61 @@
     </header>
 
     <section class="hero" id="home">
-        <h1>مستقبلك يبدأ هنا</h1>
-        <p>نقدم لك أفضل الدورات التدريبية المعتمدة عالمياً لعام 2026</p>
-        <a href="#courses" class="btn-call">اكتشف الدورات</a>
+        <h1>انطلق نحو الاحتراف 2026</h1>
+        <p>دورات تدريبية معتمدة لتطوير مهاراتك القيادية والتقنية</p>
+        <a href="#courses" class="btn-booking" style="width: 200px; margin: 20px auto;">اكتشف الدورات</a>
     </section>
 
     <section class="services" id="courses">
+        
         <!-- دورة PMP -->
         <div class="service-card">
+            <div class="video-container">
+                <iframe width="100%" height="100%" src="https://www.youtube.com" frameborder="0" allowfullscreen></iframe>
+            </div>
             <i class="fas fa-project-diagram"></i>
-            <h3>إدارة المشاريع (PMP)</h3>
-            <p>احصل على الشهادة الأقوى عالمياً في إدارة المشاريع بأسلوب عملي واحترافي.</p>
+            <h3>إدارة المشاريع الاحترافية (PMP)</h3>
+            <ul class="course-features">
+                <li><i class="fas fa-check-circle"></i> 35 ساعة تدريبية معتمدة</li>
+                <li><i class="fas fa-check-circle"></i> التحضير للاختبار الدولي</li>
+                <li><i class="fas fa-check-circle"></i> شرح منهجية Agile</li>
+            </ul>
+            <div class="price-tag">1500 ريال</div>
+            <a href="https://wa.me?text=أرغب%20في%20التسجيل%20بدورة%20PMP" class="btn-booking">احجز عبر واتساب</a>
         </div>
 
-        <!-- دورة تطوير الذات -->
+        <!-- دورة القيادة -->
         <div class="service-card">
+            <div class="video-container">
+                <iframe width="100%" height="100%" src="https://www.youtube.com" frameborder="0" allowfullscreen></iframe>
+            </div>
             <i class="fas fa-users"></i>
-            <h3>القيادة الفعالة</h3>
-            <p>تطوير مهارات القيادة والتأثير في الآخرين للارتقاء بمسارك المهني.</p>
+            <h3>القيادة الإبداعية والفعالة</h3>
+            <ul class="course-features">
+                <li><i class="fas fa-check-circle"></i> مهارات التأثير والتفاوض</li>
+                <li><i class="fas fa-check-circle"></i> بناء فرق العمل الناجحة</li>
+                <li><i class="fas fa-check-circle"></i> شهادة حضور معتمدة</li>
+            </ul>
+            <div class="price-tag">950 ريال</div>
+            <a href="https://wa.me?text=أرغب%20في%20التسجيل%20بدورة%20القيادة" class="btn-booking">احجز عبر واتساب</a>
         </div>
 
-        <!-- دورة التقنية -->
+        <!-- دورة التحول الرقمي -->
         <div class="service-card">
+            <div class="video-container">
+                <iframe width="100%" height="100%" src="https://www.youtube.com" frameborder="0" allowfullscreen></iframe>
+            </div>
             <i class="fas fa-laptop-code"></i>
-            <h3>التحول الرقمي</h3>
-            <p>تعلم مهارات المستقبل وكيفية توظيف الذكاء الاصطناعي في عملك.</p>
+            <h3>التحول الرقمي و AI</h3>
+            <ul class="course-features">
+                <li><i class="fas fa-check-circle"></i> أساسيات الذكاء الاصطناعي</li>
+                <li><i class="fas fa-check-circle"></i> تطبيقات عملية في العمل</li>
+                <li><i class="fas fa-check-circle"></i> مواكبة رؤية 2030</li>
+            </ul>
+            <div class="price-tag">1200 ريال</div>
+            <a href="https://wa.me?text=أرغب%20في%20التسجيل%20بدورة%20التحول%20الرقمي" class="btn-booking">احجز عبر واتساب</a>
         </div>
+
     </section>
 
     <section class="contact-section">
@@ -230,7 +235,7 @@
     </section>
 
     <footer>
-        <p>جميع الحقوق محفوظة &copy; 2026 | أكاديمية المهارات الادارية</p>
+        <p>جميع الحقوق محفوظة &copy; 2026 | أكاديمية المهارات الإدارية</p>
     </footer>
 
 </body>
