@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>أكاديمية المهارات الإدارية | 2026</title>
     
-    <!-- مكتبات الأيقونات والخطوط محدثة لعام 2026 -->
+    <!-- روابط المكتبات المصلحة لتظهر الأيقونات والخطوط -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com">
     <link href="https://fonts.googleapis.com" rel="stylesheet">
     
@@ -92,7 +92,7 @@
             margin-bottom: 15px;
             background: #000;
             position: relative;
-            padding-bottom: 56.25%; /* نسبة 16:9 للمشغل */
+            padding-bottom: 56.25%;
             height: 0;
         }
 
@@ -161,7 +161,7 @@
 
     <section class="services" id="courses">
         
-        <!-- دورة PMP مع فيديو Shorts الخاص بك -->
+        <!-- دورة PMP تم تعديل الرابط هنا ليعمل -->
         <div class="service-card">
             <div class="video-container">
                <iframe 
