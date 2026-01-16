@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>أكاديمية المهارات الإدارية | 2026</title>
+    <title>Management Skills Academy | أكاديمية المهارات الإدارية</title>
     
-    <!-- روابط مكتبات مشفرة وآمنة لعام 2026 -->
+    <!-- Fonts & Icons 2026 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com">
     <link href="https://fonts.googleapis.com" rel="stylesheet">
     
@@ -15,126 +15,167 @@
             --secondary: #b21f1f;
             --accent: #fdbb2d;
             --white: #ffffff;
-            --bg-light: #f8f9fa;
+            --text-dark: #2d3436;
         }
 
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Almarai', sans-serif; }
-        body { background-color: var(--bg-light); color: #333; line-height: 1.6; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Almarai', 'Poppins', sans-serif; background: #f4f7f6; color: var(--text-dark); line-height: 1.8; }
 
         header {
-            background: var(--primary); padding: 15px 5%;
+            background: var(--primary); padding: 20px 5%;
             display: flex; justify-content: space-between; align-items: center;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2); position: sticky; top: 0; z-index: 1000;
         }
 
-        .logo { color: var(--accent); font-size: 1.4rem; font-weight: 800; text-decoration: none; display: flex; align-items: center; gap: 10px; }
-        
-        nav a { color: var(--white); text-decoration: none; margin-right: 20px; font-weight: 700; }
+        .logo-container { display: flex; align-items: center; gap: 15px; color: var(--accent); text-decoration: none; }
+        .logo-icon { font-size: 2.5rem; }
+        .logo-text h1 { font-size: 1.2rem; color: var(--white); line-height: 1.2; }
+        .logo-text span { font-size: 0.8rem; color: var(--accent); display: block; }
 
         .hero {
-            background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
-            padding: 80px 5%; text-align: center; color: white;
+            background: linear-gradient(rgba(26, 42, 108, 0.9), rgba(26, 42, 108, 0.9)), 
+                        url('https://images.unsplash.com');
+            background-size: cover; background-position: center;
+            color: white; padding: 100px 5%; text-align: center;
         }
 
-        .about-section { padding: 50px 10%; text-align: center; background: white; }
-        .about-section h2 { color: var(--primary); margin-bottom: 15px; }
+        .section-padding { padding: 80px 5%; }
+        .about-box { background: white; border-radius: 20px; padding: 40px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); margin-bottom: 50px; }
+        .dual-lang { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; text-align: justify; }
+        .lang-ar { direction: rtl; }
+        .lang-en { direction: ltr; font-family: 'Poppins', sans-serif; border-left: 2px solid #eee; padding-left: 40px; }
 
-        .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; padding: 40px 5%; }
+        h2.section-title { text-align: center; margin-bottom: 40px; color: var(--primary); font-size: 2rem; position: relative; }
+        h2.section-title::after { content: ''; width: 80px; height: 4px; background: var(--accent); position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%); }
 
-        .service-card {
-            background: var(--white); border-radius: 15px; overflow: hidden;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.1); border-bottom: 5px solid var(--accent);
-        }
-
-        /* حاوية الصور مع رابط بديل في حال الفشل */
-        .image-box { width: 100%; height: 200px; background: #ddd; overflow: hidden; }
-        .image-box img { width: 100%; height: 100%; object-fit: cover; }
-
-        .card-content { padding: 20px; text-align: right; }
-        .card-content h3 { color: var(--primary); margin-bottom: 10px; }
-
-        /* حاوية الفيديو - تم تحديثها لتعمل مع سياسات 2026 */
-        .video-container {
-            position: relative; padding-bottom: 56.25%; height: 0; 
-            overflow: hidden; background: #000; border-radius: 10px; margin: 15px 0;
-        }
-        .video-container iframe {
-            position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;
-        }
-
-        .price-tag { font-size: 1.4rem; font-weight: 800; color: var(--secondary); margin: 15px 0; }
+        .courses-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px; }
+        .course-card { background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 15px 35px rgba(0,0,0,0.1); border-top: 6px solid var(--accent); }
         
-        .btn-booking {
-            background: var(--accent); color: var(--primary); padding: 12px; border-radius: 50px;
-            text-decoration: none; font-weight: 800; display: block; text-align: center;
-        }
+        .course-img { width: 100%; height: 230px; object-fit: cover; border-bottom: 1px solid #eee; }
+        
+        .video-wrapper { position: relative; padding-bottom: 56.25%; height: 0; background: #000; }
+        .video-wrapper iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
 
-        .contact-section { background: var(--primary); color: white; padding: 50px 5%; text-align: center; }
-        footer { background: #111; color: white; padding: 20px; text-align: center; }
+        .course-content { padding: 30px; }
+        .price { font-size: 1.8rem; color: var(--secondary); font-weight: 800; margin: 20px 0; }
+        
+        .btn-wa {
+            background: #25d366; color: white; padding: 15px; border-radius: 12px;
+            text-decoration: none; display: block; text-align: center; font-weight: 700;
+            transition: 0.3s; font-size: 1.1rem;
+        }
+        .btn-wa:hover { background: #128c7e; transform: scale(1.02); }
+
+        .contact-footer { background: var(--primary); color: white; padding: 60px 5%; text-align: center; }
+        
+        @media (max-width: 768px) { .dual-lang { grid-template-columns: 1fr; } .lang-en { border-left: 0; border-top: 2px solid #eee; padding-left: 0; padding-top: 40px; } }
     </style>
 </head>
 <body>
 
     <header>
-        <a href="#" class="logo">
-            <i class="fas fa-graduation-cap"></i>
-            <span>أكاديمية المهارات الإدارية</span>
+        <a href="#" class="logo-container">
+            <i class="fas fa-graduation-cap logo-icon"></i>
+            <div class="logo-text">
+                <h1>أكاديمية المهارات الإدارية</h1>
+                <span>MANAGEMENT SKILLS ACADEMY</span>
+            </div>
         </a>
-        <nav><a href="#courses">الدورات</a></nav>
     </header>
 
     <section class="hero">
-        <h1>مستقبلك المهني يبدأ معنا</h1>
-        <p>نقدم برامج تدريبية احترافية تواكب رؤية 2030</p>
+        <h1>Building Future Leaders 2026</h1>
+        <h2>نصنع قادة المستقبل بمعايير عالمية</h2>
     </section>
 
-    <section class="about-section">
-        <h2>من نحن</h2>
-        <p>أكاديمية متخصصة في تأهيل القادة والمدراء بأحدث المنهجيات العالمية والذكاء الاصطناعي.</p>
-    </section>
-
-    <section class="services" id="courses">
-        
-        <!-- دورة PMP -->
-        <div class="service-card">
-            <div class="image-box">
-                <img src="https://images.unsplash.com" alt="PMP Course">
-            </div>
-            <div class="card-content">
-                <h3>إدارة المشاريع (PMP)</h3>
-                <p>وصف: دورة مكثفة لاجتياز اختبار PMP العالمي.</p>
-                <div class="video-container">
-                    <!-- رابط التضمين الآمن -->
-                    <iframe src="https://www.youtube-nocookie.com" allowfullscreen></iframe>
+    <section class="section-padding" id="about">
+        <div class="about-box">
+            <h2 class="section-title">من نحن | About Us</h2>
+            <div class="dual-lang">
+                <div class="lang-ar">
+                    <h3>رؤيتنا الإستراتيجية</h3>
+                    <p>تعد أكاديمية المهارات الإدارية صرحاً تدريبياً رائداً في الشرق الأوسط، تأسست لتقديم حلول تعليمية وتطويرية متكاملة. نحن متخصصون في تحويل المفاهيم الإدارية المعقدة إلى مهارات تطبيقية. نركز في عام 2026 على دمج الذكاء الاصطناعي في الإدارة، وتطوير القيادة الاستراتيجية، وإدارة المشاريع الضخمة وفقاً لرؤية المملكة 2030. نهدف إلى سد الفجوة بين المعرفة النظرية ومتطلبات سوق العمل العالمي من خلال مدربين معتمدين دولياً وبيئة تعليمية تفاعلية.</p>
                 </div>
-                <div class="price-tag">400 ريال</div>
-                <a href="https://wa.me" class="btn-booking">حجز مقعد</a>
+                <div class="lang-en">
+                    <h3>Our Strategic Vision</h3>
+                    <p>Management Skills Academy is a leading educational institution in the Middle East, established to provide integrated learning and development solutions. We specialize in transforming complex management concepts into practical skills. In 2026, we focus on integrating AI into management, strategic leadership development, and mega-project management aligned with Vision 2030. We aim to bridge the gap between theoretical knowledge and global market demands through internationally certified trainers.</p>
+                </div>
             </div>
         </div>
 
-        <!-- دورة القيادة -->
-        <div class="service-card">
-            <div class="image-box">
-                <img src="https://images.unsplash.com" alt="Leadership">
+        <h2 class="section-title">برامجنا التدريبية | Training Programs</h2>
+        
+        <div class="courses-grid">
+            
+            <!-- Course 1: PMP -->
+            <div class="course-card">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com" title="PMP" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="course-content">
+                    <div class="dual-lang" style="grid-template-columns: 1fr; gap: 15px;">
+                        <div class="lang-ar">
+                            <h3>إدارة المشاريع الاحترافية (PMP)</h3>
+                            <p>الدورة الأشهر عالمياً لاحتراف إدارة المشاريع وفق منهجية PMI الإصدار السابع. تشمل إدارة المخاطر، الجدولة الزمنية، والقيادة الرشيقة (Agile).</p>
+                        </div>
+                        <div class="lang-en" style="border:0; padding:0;">
+                            <h3>Project Management Professional</h3>
+                            <p>The world's most prestigious certification in project management according to PMI 7th edition. Covers risk management, scheduling, and Agile leadership.</p>
+                        </div>
+                    </div>
+                    <div class="price">400 SAR</div>
+                    <a href="https://wa.me" class="btn-wa"><i class="fab fa-whatsapp"></i> سجل الآن | Register Now</a>
+                </div>
             </div>
-            <div class="card-content">
-                <h3>القيادة الإبداعية</h3>
-                <p>وصف: مهارات القيادة الحديثة وبناء فرق العمل.</p>
-                <div class="price-tag">950 ريال</div>
-                <a href="https://wa.me" class="btn-booking">حجز مقعد</a>
+
+            <!-- Course 2: Leadership -->
+            <div class="course-card">
+                <img src="https://images.unsplash.com" class="course-img" alt="Leadership">
+                <div class="course-content">
+                    <div class="dual-lang" style="grid-template-columns: 1fr; gap: 15px;">
+                        <div class="lang-ar">
+                            <h3>القيادة الإبداعية والفعالة</h3>
+                            <p>تركز هذه الدورة على بناء مهارات القائد المؤثر، اتخاذ القرارات الاستراتيجية تحت الضغط، وبناء فرق العمل عالية الأداء في بيئة العمل الرقمية.</p>
+                        </div>
+                        <div class="lang-en" style="border:0; padding:0;">
+                            <h3>Creative & Effective Leadership</h3>
+                            <p>Focuses on building influential leader skills, strategic decision-making under pressure, and high-performance team building in digital environments.</p>
+                        </div>
+                    </div>
+                    <div class="price">950 SAR</div>
+                    <a href="https://wa.me" class="btn-wa"><i class="fab fa-whatsapp"></i> سجل الآن | Register Now</a>
+                </div>
             </div>
+
+            <!-- Course 3: Digital Transformation -->
+            <div class="course-card">
+                <img src="https://images.unsplash.com" class="course-img" alt="AI">
+                <div class="course-content">
+                    <div class="dual-lang" style="grid-template-columns: 1fr; gap: 15px;">
+                        <div class="lang-ar">
+                            <h3>التحول الرقمي والذكاء الاصطناعي</h3>
+                            <p>تأهيل المدراء لقيادة التحول الرقمي في مؤسساتهم، واستخدام أدوات AI لرفع الإنتاجية وتحليل البيانات الضخمة لدعم القرار.</p>
+                        </div>
+                        <div class="lang-en" style="border:0; padding:0;">
+                            <h3>Digital Transformation & AI</h3>
+                            <p>Qualifying managers to lead digital transformation and use AI tools to increase productivity and analyze big data for decision support.</p>
+                        </div>
+                    </div>
+                    <div class="price">1200 SAR</div>
+                    <a href="https://wa.me" class="btn-wa"><i class="fab fa-whatsapp"></i> سجل الآن | Register Now</a>
+                </div>
+            </div>
+
         </div>
-
     </section>
 
-    <section class="contact-section">
-        <h2>تواصل معنا</h2>
-        <p>واتساب: 966533936881+</p>
-        <p>ايميل: awaad852@gmail.com</p>
-    </section>
-
-    <footer>
-        <p>جميع الحقوق محفوظة &copy; 2026</p>
+    <footer class="contact-footer">
+        <h2>تواصل معنا | Contact Us</h2>
+        <div style="margin: 20px 0;">
+            <p><i class="fab fa-whatsapp"></i> +966533936881</p>
+            <p><i class="fas fa-envelope"></i> awaad852@gmail.com</p>
+        </div>
+        <p>&copy; 2026 Management Skills Academy. All rights reserved.</p>
     </footer>
 
 </body>
