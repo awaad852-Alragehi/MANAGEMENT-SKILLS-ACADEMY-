@@ -180,7 +180,8 @@
         <!-- دورة PMP -->
         <div class="service-card">
             <div class="video-container">
-                <iframe width="100%" height="100%" src="https://www.youtube.com" frameborder="0" allowfullscreen></iframe>
+               <iframe width="100%" height="100%" src="https://www.youtube.com" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
             </div>
             <i class="fas fa-project-diagram"></i>
             <h3>إدارة المشاريع الاحترافية (PMP)</h3>
@@ -189,7 +190,7 @@
                 <li><i class="fas fa-check-circle"></i> التحضير للاختبار الدولي</li>
                 <li><i class="fas fa-check-circle"></i> شرح منهجية Agile</li>
             </ul>
-            <div class="price-tag">1500 ريال</div>
+            <div class="price-tag">400 ريال</div>
             <a href="https://wa.me?text=أرغب%20في%20التسجيل%20بدورة%20PMP" class="btn-booking">احجز عبر واتساب</a>
         </div>
 
