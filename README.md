@@ -1,191 +1,96 @@
-
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>أكاديمية التدريب والتطوير | ACADEMY FOR TRAINING</title>
-    <!-- استيراد خط جـوجل (Almarai) -->
-    <link href="fonts.googleapis.com" rel="stylesheet">
+    <title>اكاديمية المهارات الادارية | ACADEMY</title> <!-- 1. جدة-المملكة العربية السعودية -->
+    <link href="https://fonts.googleapis.com" rel="stylesheet">
     
     <style>
         :root {
-            --primary-color: #2c3e50; /* كحلي غامق */
-            --secondary-color: #3498db; /* أزرق فاتح */
-            --accent-color: #e67e22; /* برتقالي للتمييز */
+            --primary-color: #2c3e50; 
+            --secondary-color: #3498db; 
+            --accent-color: #e67e22; 
             --bg-light: #f4f7f6;
             --white: #ffffff;
         }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Almarai', sans-serif;
-        }
-
-        body {
-            background-color: var(--bg-light);
-            color: var(--primary-color);
-            line-height: 1.6;
-        }
-
-        /* الهيدر (Header) */
-        header {
-            background-color: var(--white);
-            padding: 20px 5%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        .logo {
-            font-weight: 800;
-            font-size: 1.5rem;
-            color: var(--primary-color);
-            text-decoration: none;
-        }
-
-        nav a {
-            margin-right: 20px;
-            text-decoration: none;
-            color: var(--primary-color);
-            font-weight: 700;
-            transition: 0.3s;
-        }
-
-        nav a:hover {
-            color: var(--secondary-color);
-        }
-
-        /* القسم الرئيسي (Hero Section) */
-        .hero {
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-            color: var(--white);
-            padding: 100px 5%;
-            text-align: center;
-        }
-
-        .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 20px;
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            margin-bottom: 30px;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .btn {
-            background-color: var(--accent-color);
-            color: var(--white);
-            padding: 12px 30px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: 0.3s;
-            display: inline-block;
-        }
-
-        .btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-        }
-
-        /* قسم الخدمات/المميزات */
-        .services {
-            padding: 80px 5%;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-
-        .service-card {
-            background: var(--white);
-            padding: 40px;
-            border-radius: 15px;
-            text-align: center;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-            transition: 0.3s;
-        }
-
-        .service-card:hover {
-            transform: translateY(-10px);
-        }
-
-        .service-card i {
-            font-size: 3rem;
-            color: var(--secondary-color);
-            margin-bottom: 20px;
-            display: block;
-        }
-
-        .service-card h3 {
-            margin-bottom: 15px;
-        }
-
-        /* الفوتر (Footer) */
-        footer {
-            background-color: var(--primary-color);
-            color: var(--white);
-            text-align: center;
-            padding: 40px 5%;
-            margin-top: 50px;
-        }
-
-        /* استجابة الشاشات الصغيرة */
-        @media (max-width: 768px) {
-            .hero h1 { font-size: 2rem; }
-            header { flex-direction: column; gap: 15px; }
-            nav a { margin: 0 10px; font-size: 0.9rem; }
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Almarai', sans-serif; }
+        body { background-color: var(--bg-light); color: var(--primary-color); line-height: 1.6; }
+        header { background-color: var(--white); padding: 20px 5%; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
+        .logo { font-weight: 800; font-size: 1.5rem; color: var(--primary-color); text-decoration: none; }
+        nav a { margin-right: 20px; text-decoration: none; color: var(--primary-color); font-weight: 700; transition: 0.3s; }
+        .hero { background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); color: var(--white); padding: 100px 5%; text-align: center; }
+        .hero h1 { font-size: 3rem; margin-bottom: 20px; }
+        .services { padding: 80px 5%; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .service-card { background: var(--white); padding: 40px; border-radius: 15px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+        .contact-info { background: #eee; padding: 50px 5%; text-align: center; }
+        footer { background-color: var(--primary-color); color: var(--white); text-align: center; padding: 40px 5%; }
     </style>
 </head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com">
 <body>
 
     <header>
-        <a href="#" class="logo">ACADEMY-TRAINING</a>
+        <a href="#" class="logo">اكاديمية المهارات الادارية</a> <!-- 2. management skills academy -->
         <nav>
             <a href="#home">الرئيسية</a>
             <a href="#courses">الدورات</a>
-            <a href="#about">عن الأكاديمية</a>
             <a href="#contact">اتصل بنا</a>
         </nav>
     </header>
 
     <section class="hero" id="home">
-        <h1>أكاديمية التدريب والتطوير</h1>
-        <p>نحن نسعى لتمكين الأفراد والمؤسسات من خلال برامج تدريبية احترافية تتماشى مع معايير الجودة العالمية ورؤية المستقبل.</p>
-        <a href="#courses" class="btn">استعرض الدورات المتاحة</a>
+        <h1>مرحباً بكم في [اكاديمية المهارات الادارية]</h1> <!-- 3. جدة-المملكة العربية السعودية -->
+        <p>[هنا تضع وصف الأكاديمية: مثلاً نحن مؤسسة تعليمية متخصصة في تقديم أفضل الدورات التدريبية المعتمدة لعام 2026]</p> <!-- 4. هنا تضع وصف الأكاديمية: مثلاً نحن مؤسسة تعليمية متخصصة في تقديم أفضل الدورات التدريبية المعتمدة لعام 2026 -->
     </section>
 
     <section class="services" id="courses">
+        <!-- 5. قسم الدورات: يمكنك تكرار "service-card" لكل دورة جديدة -->
+        <div class="        <!-- دورة PMP -->
         <div class="service-card">
-            <h3>تطوير القيادة</h3>
-            <p>برامج متخصصة لإعداد القادة وصقل المهارات الإدارية وفق أحدث النظريات العالمية.</p>
+            <i class="fas fa-project-diagram"></i> <!-- أيقونة تعبيرية -->
+            <h3>دورة إدارة المشاريع الاحترافية (PMP)</h3>
+            <p>
+                تعد هذه الدورة المرجع الأقوى عالمياً لمديري المشاريع. سيتعلم الطالب من خلالها كيفية قيادة المشاريع بنجاح باستخدام منهجيات (Project Management Institute) لعام 2026.
+            </p>
+            <hr style="margin: 15px 0; border: 0; border-top: 1px solid #eee;">
+            <ul style="text-align: right; font-size: 0.9rem; list-style: none; padding-right: 0;">
+                <li>✅ إتقان منهجيات إدارة المشاريع (الشلالية، الرشيقة، والهجينة).</li>
+                <li>✅ مهارات قيادة فرق العمل وتحفيز الأداء.</li>
+                <li>✅ إدارة المخاطر، التكاليف، والجدول الزمني بدقة.</li>
+                <li>✅ التحضير الكامل لاجتياز الاختبار الدولي والحصول على الشهادة.</li>
+            </ul>
+        </div>
+">
+            <h3>ادارة المشاريع الاحترافية pmp</h3>
+            <p>هي دورة تأهيلية تهدف إلى تزويد المتدربين بالمهارات والأدوات اللازمة لإدارة المشاريع بكفاءة عالية، بدءاً من التخطيط وحتى الإغلاق، بما يضمن تحقيق الأهداف ضمن الميزانية والوقت المحدد.
+ماذا سيتعلم الطالب؟
+طرق العمل: التعرف على الفرق بين الإدارة التقليدية (Waterfall) والإدارة المرنة (Agile).
+المجالات المعرفية: كيفية إدارة النطاق، الوقت، التكلفة، الجودة، والموارد البشرية.
+القيادة: كيفية التعامل مع أصحاب المصلحة (Stakeholders) وحل النزاعات داخل الفريق.
+الاحترافية: تطبيق المعايير الأخلاقية والمهنية في بيئة العمل..</p>
         </div>
         <div class="service-card">
-            <h3>التدريب التقني</h3>
-            <p>دورات في البرمجة، الذكاء الاصطناعي، وتحليل البيانات لمواكبة سوق العمل الرقمي.</p>
+            <h3>اسم الدورة الثانية</h3>
+            <p>وصف مختصر للدورة الثانية.</p>
         </div>
         <div class="service-card">
-            <h3>تطوير الذات</h3>
-            <p>مهارات التواصل، إدارة الوقت، والتفكير الإبداعي لتعزيز الكفاءة الشخصية.</p>
+            <h3>اسم الدورة الثالثة</h3>
+            <p>وصف مختصر للدورة الثالثة.</p>
         </div>
     </section>
 
+    <section class="contact-info" id="contact">
+        <h2>تواصل معنا</h2>
+        <br>
+        <p>رقم الهاتف: 966500966533936881+ </p> <!-- 6. 00966533936881 -->
+        <p>البريد الإلكتروني: info@youracademy.com</p> <!-- 7. awaad852@gmail.com -->
+        <p>الموقع: جدة، المملكة العربية السعودية</p>
+    </section>
+
     <footer>
-        <p>جميع الحقوق محفوظة &copy; 2026 | أكاديمية التدريب والتطوير</p>
-        <p style="font-size: 0.8rem; margin-top: 10px; opacity: 0.7;">تم التطوير لـ TRAINING-ACADEMY</p>
+        <p>جميع الحقوق محفوظة &copy; 2026 |اكاديمية المهارات الادارية</p>
     </footer>
 
 </body>
 </html>
-
