@@ -8,11 +8,41 @@
     
     <style>
         :root {
-            --primary-color: #2c3e50; 
-            --secondary-color: #3498db; 
-            --accent-color: #e67e22; 
-            --bg-light: #f4f7f6;
-            --white: #ffffff;
+                   .service-card {
+            background: var(--white);
+            padding: 40px;
+            /* 1. حواف دائرية كبيرة */
+            border-radius: 20px; 
+            text-align: center;
+            /* 2. ظل ناعم واحترافي */
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); 
+            /* 3. إضافة انسيابية عند التحريك */
+            transition: all 0.4s ease; 
+            border: 1px solid rgba(0, 0, 0, 0.02); /* إطار خفيف جداً */
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* تأثير رائع عند تمرير الماوس فوق البطاقة */
+        .service-card:hover {
+            transform: translateY(-10px); /* ترتفع للأعلى قليلاً */
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15); /* يصبح الظل أقوى */
+            border-color: var(--secondary-color); /* يتغير لون الإطار للأزرق */
+        }
+
+        /* تحسين مظهر الأيقونة داخل البطاقة */
+        .service-card i {
+            font-size: 2.5rem;
+            color: var(--secondary-color);
+            margin-bottom: 20px;
+            background: #f0f7ff; /* خلفية دائرية خفيفة للأيقونة */
+            width: 80px;
+            height: 80px;
+            line-height: 80px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
         }
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Almarai', sans-serif; }
         body { background-color: var(--bg-light); color: var(--primary-color); line-height: 1.6; }
@@ -48,6 +78,10 @@
         <!-- 5. قسم الدورات: يمكنك تكرار "service-card" لكل دورة جديدة -->
         <div class="        <!-- دورة PMP -->
         <div class="service-card">
+        <div class="service-card">
+    <i class="fas fa-project-diagram"></i> <!-- هذا السطر يضيف الأيقونة -->
+    <h3>دورة إدارة المشاريع الاحترافية (PMP)</h3>
+
             <i class="fas fa-project-diagram"></i> <!-- أيقونة تعبيرية -->
             <h3>دورة إدارة المشاريع الاحترافية (PMP)</h3>
             <p>
